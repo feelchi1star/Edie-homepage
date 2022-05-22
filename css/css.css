@@ -18,13 +18,20 @@ body {
   font-weight: 800;
   font-size: 36px;
 }
+
 .nav-header {
   color: #333333;
   display: flex;
   justify-content: space-around;
   align-items: center;
   padding-top: 10px;
-  position: sticky;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: 2;
 }
 .close-nav {
   display: none;
