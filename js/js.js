@@ -22,13 +22,13 @@ function closeNav() {
 close.addEventListener("click", closeNav);
 // Sticky
 window.onscroll = function () {
-  myFunction();
+  myFunction1();
 };
 
 var navbar = document.getElementById("navbar");
 var sticky = navbar.offsetTop;
 
-function myFunction() {
+function myFunction1() {
   if (window.pageYOffset >= sticky) {
     navbar.classList.add("sticky");
   } else {
