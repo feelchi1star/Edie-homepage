@@ -33,10 +33,7 @@ body {
   background-color: #fff;
   z-index: 1;
 }
-.close-nav {
-  display: none;
-}
-.collapse-nav {
+.close {
   display: none;
 }
 ul,
@@ -88,6 +85,7 @@ a {
 .intro {
   margin-left: 170px;
   padding: 30px;
+  margin-top: 30px;
 }
 .div-lead {
   font-family: "Poppins";
@@ -301,6 +299,7 @@ figcaption {
 .team-left > .lead {
   width: 350px;
 }
+
 /* Clients Profile Images  */
 .profile-img {
   background-image: url(../img/person4.png);
@@ -524,6 +523,7 @@ footer {
 /* Mobile */
 @media (max-width: 599px) {
   /* footer */
+
   #contact {
     gap: 30px;
     flex-direction: column;
@@ -623,8 +623,7 @@ footer {
   }
   .img-size {
     width: 100%;
-    height: 350px;
-    padding: 4px;
+    height: 300px;
   }
   .img:nth-child(even) {
     top: 0;
@@ -672,12 +671,24 @@ footer {
     justify-items: center;
     gap: 15px;
   }
-
+  .deactive {
+    display: none;
+  }
   .nav-header {
     display: block;
   }
-  #mylinks {
+  .nav-item {
     display: none;
+  }
+
+  .close {
+    display: none;
+    position: absolute;
+    top: 5px;
+    right: 18px;
+  }
+  .active {
+    display: block;
   }
   .nav-text {
     display: block;
@@ -696,12 +707,7 @@ footer {
   .nav-title {
     margin-left: 10px;
   }
-  .close-nav {
-    display: none;
-    position: absolute;
-    top: 5px;
-    right: 18px;
-  }
+
   .collapse-nav {
     display: block;
     position: absolute;
