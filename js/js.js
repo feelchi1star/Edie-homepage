@@ -1,3 +1,4 @@
+// Navbar section
 var x = document.getElementById("mylinks");
 var open = document.querySelector("#open");
 var close = document.querySelector("#close");
@@ -21,10 +22,21 @@ function closeNav() {
 }
 close.addEventListener("click", closeNav);
 // Sticky
+var li = document.querySelectorAll(".link >a");
 window.onscroll = function () {
   myFunction1();
 };
+for (let i = 0; i < li.length; i++) {
+  li[i].addEventListener("click", closeNav);
+}
 
+// link onclick effect
+
+function link() {
+  x.style.display = "none";
+}
+
+// Sticky function
 var navbar = document.getElementById("navbar");
 var sticky = navbar.offsetTop;
 
