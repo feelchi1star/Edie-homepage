@@ -426,7 +426,7 @@ footer {
   display: flex;
   align-items: center;
 }
-
+/* tablet */
 @media (min-width: 600px) and (max-width: 992px) {
   .nav-text {
     gap: 10px;
@@ -680,6 +680,7 @@ footer {
   .nav-text {
     display: block;
     text-align: center;
+    font-size: 18px;
   }
 
   .link {
