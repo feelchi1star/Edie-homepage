@@ -220,6 +220,7 @@ button {
   padding-top: 10px;
   gap: 15px;
 }
+
 .h5 {
   font-style: normal;
   font-weight: 500;
@@ -657,6 +658,7 @@ footer {
   .team-img-size-clear {
     width: 100%;
     height: 300px;
+    background-size: cover;
   }
   .team-img-size-unique {
     width: 100%;
